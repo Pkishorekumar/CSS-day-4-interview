@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .img-1{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 2px solid azure;
+    border-radius: 50%;
+}
+.two{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.two-1{
+    background-color: deepskyblue;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 25px;
+    text-align: center;
+}
+.img-3{
+    width: 100%;
+    height: 46em;
+}
+.btn-1{
+    background-color: deepskyblue;
+    border-radius: 50px;
+    border: 2px solid deepskyblue;
+    width: 200px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.one{
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 450px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bar{
+    display: flex;
+    background-image: linear-gradient(to right,red,black);
+}
+.container-1{
+    display: flex;
+    background-color: dimgray;
+    width: 500px;
+    margin-left: 250px;
+}
+.img-2{
+        width: 350px;
+        height: 350px;
+        margin-left: 350px;
+    }
+    .one-2{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.btn-3{
+    background-color: deepskyblue;
+    border-radius: 50px;
+    border: 2px solid deepskyblue;
+    width: 200px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bolder;  
+}
+nav{
+    color: azure;
+    display: flex;
+  margin-left: 1050px;
+   margin-right: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+h3{
+    margin-left: 10px;
+}
+
+
+
+
+
+@media screen and (max-width:520px){
+    .container{
+        display: none;
+    }
+    .two{
+    flex-direction: column;
+  } 
+   .two-1{
+    background-color: rgb(255, 132, 0);
+    width: 250px;
+    height: 250px;
+   
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  
+}
+@media screen and (max-width:520px) {
+    
+    .container-1{
+       flex-direction: column-reverse;
+       margin-left: 0px;
+       width: 320px;
+       height: 500px;
+    }
+    .btn-3{
+        background-color: coral;
+        border: 1px solid coral;
+        border-radius: 50px;
+        margin-left: -40px;
+        margin-top: -100px;
+     
+    }
+    .img-2{
+        width: 250px;
+        height: 250px;
+        margin-left: 240px;
+    }
+    .mvdiv{
+        margin-left: -210px;
+    }
+}
+
+@media screen and (mix-width:620px){
+    .two{
+        display: none;
+    }
+   
+    .container-1{
+      background-color: darkslategray;
+       margin-left: 0px;
+       width: 720px;
+       height: 300px;
+    }
+    .btn-3{
+        background-color: coral;
+        border: 1px solid coral;
+        border-radius: 50px;
+        margin-left: -30px;
+        margin-top: -25px;
+    }
+    .img-2{
+        width: 250px;
+        height: 250px;
+        margin-left: 70px;
+        margin-top: 25px;
+    }
+}
+
+    </style>
+</head>
+<body>
+     <h3>Create masterhead - add background image and put a text at the center , with button below it </h3>
+     <div class="container">
+       
+        <div class="one">
+         <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Veritatis incidunt iure temporibus. Consequuntur provident quis odit <br>
+            eum possimus magnam, omnis tempore aspernatur
+         </p>
+         <button class="btn-1">click on</button>
+        </div>
+        <div>
+          <img src="36.jpg" alt="" class="img-3">
+        </div>
+
+        <h3>Create header -- left side will have logo and right side will have 4 button </h3>
+        <div class="bar">
+            <img src="5.jpg" alt="" class="img-1">
+            <nav>
+                <h3>HOME</h3>
+                <h3>ABOUTUS</h3>
+                <h3>CONTACTUS</h3>
+                <h3>EXIT</h3>
+            </nav>
+        </div>
+    </div>
+
+</div>
+    <h3>Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view</h3>
+    <div class="two">
+       <div class="two-1">BOX 1</div>
+       <div class="two-1">BOX 2</div>
+       <div class="two-1">BOX 3</div>
+    </div>
+
+
+    <h3>Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad</h3>
+      <div class="container-1">
+    <div class="one-2">
+         <button class="btn-3">click on</button>
+        </div>
+        <div class="mvdiv">
+          <img src="prebbytes.jpg.png" alt="" class="img-2">
+        </div>
+        </div>
+
+
+        <h3>Write code to show implementation of flex</h3>
+        <pre>
+           Flex direction:- row
+           Flex direction:-row-reverce
+           Flex direction:-column
+           Flex direction:-column-reverse
+           Flex wrap:- nowrap
+           Flex wrap:- wrap
+           Flex wrap:- wrap-reverse
+           Flex wrap:- inherit,initial 
+           Flex wrap:- revert
+           Flex wrap:- revert-layer
+           Flex wrap:- unset 
+        </pre>
+
+</body>
+</html>
